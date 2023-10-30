@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Converter</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Metric Converter</h1>
+        <p>Enter the value and select the unit you want to convert from:</p>
+
+        <input type="number" id="input" placeholder="Enter value">
+        
+        <select id="fromUnit">
+            <option value="nanometers">Nanometers</option>
+            <option value="micrometers">Micrometers</option>
+            <option value="millimeters">Millimeters</option>
+            <option value="centimeters">Centimeters</option>
+            <option value="decimeters">Decimeters</option>
+            <option value="meters">Meters</option>
+            <option value="decameters">Decameters</option>
+            <option value="hectometers">Hectometers</option>
+            <option value="kilometers">Kilometers</option>
+            <option value="megameters">Megameters</option>
+            <option value="gigameters">Gigameters</option>
+            <option value="terameters">Terameters</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <div id="output">
+            <div>
+                <span id="nanometersValue" class="output-value"></span>
+                <span id="micrometersValue" class="output-value"></span>
+                <span id="millimetersValue" class="output-value"></span>
+                <span id="centimetersValue" class="output-value"></span>
+                <span id="decimetersValue" class="output-value"></span>
+                <span id="metersValue" class="output-value"></span>
+                <span id="decametersValue" class="output-value"></span>
+                <span id="hectometersValue" class="output-value"></span>
+                <span id="kilometersValue" class="output-value"></span>
+                <span id="megametersValue" class="output-value"></span>
+                <span id="gigametersValue" class="output-value"></span>
+                <span id="terametersValue" class="output-value"></span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
